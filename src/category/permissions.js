@@ -1,9 +1,9 @@
 const { hasPermissionsMiddleware } = require("../utils/middlewares");
 
-const categoryPermissionCreate = hasPermissionsMiddleware(["create-category"]);
-const categoryPermissionRead = hasPermissionsMiddleware(["read-category"]);
-const categoryPermissionUpdate = hasPermissionsMiddleware(["update-category"]);
-const categoryPermissionDelete = hasPermissionsMiddleware(["delete-category"]);
+const categoryPermissionCreate = hasPermissionsMiddleware(["create-categories"]);
+const categoryPermissionRead = hasPermissionsMiddleware(["read-categories"]);
+const categoryPermissionUpdate = hasPermissionsMiddleware(["update-categories"]);
+const categoryPermissionDelete = hasPermissionsMiddleware(["delete-categories"]);
 
 module.exports = {
   categoryPermissionCreate,
