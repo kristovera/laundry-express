@@ -11,6 +11,7 @@ const { USER_PATH, userRouter } = require("./src/users/routers");
 const { ME_PATH, meRouter } = require("./src/me/routers");
 const { PRODUCT_PATH, productRouter } = require("./src/products/routers");
 const { CATEGORY_PATH, categoryRouter } = require("./src/category/routers");
+const { ORDER_PATH, orderRouter } = require("./src/orders/routers");
 
 connectDB();
 const app = express();
@@ -25,6 +26,7 @@ app.use(USER_PATH, userRouter);
 app.use(ME_PATH, meRouter);
 app.use(PRODUCT_PATH, productRouter);
 app.use(CATEGORY_PATH, categoryRouter);
+app.use(ORDER_PATH, orderRouter);
 
 module.exports = {
   app,
